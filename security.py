@@ -14,13 +14,13 @@ def Take_snapshot():
         cv2.imwrite(img_name,frame)
         startTime = time.time
         result = False
-    return img_name
+        return img_name
     print("Screenshot is taken")
     videoCaptureObject.release()
     cv2.destroyAllWindows()
 
 def upload_file(img_name):
-    accessToken = ""
+    accessToken = "vzigWLg1fnAAAAAAAAAAAaxUdhLm_Id0UYonuQvBrbV6wxTy49f3i_KUb5ntT3rk"
     file = img_name
     file_from = file
     file_to = "/testFolder"+(img_name)
